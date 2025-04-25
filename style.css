@@ -1,49 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
-    --cor-primaria: #2980b9;          /* azul vibrante (primário) */
-    --cor-secundaria: #3498db;        /* azul claro (secundário) */
-    --cor-terciaria: #ecf6fb;         /* azul muito claro para fundos */
-    --cor-quartenaria: #2c3e50;       /* azul acinzentado escuro para contraste */
-    --cor-botao: #2980b9;             /* botão na cor primária */
-    --cor-fundo-pagina: #f5fcff;      /* branco azulado para leveza */
-    --cor-fundo-cartao: #ffffff;      /* branco puro para destaque */
-    --cor-primaria-texto: #1b4f72;    /* azul escuro para texto */
-    --cor-bordas: #d6eaf8;            /* azul muito claro para suavidade */
+    --cor-primaria: #0f4c81;
+    --cor-secundaria: #d8d6d1;
+    --cor-terciaria: #f4f3f0;
+    --cor-quartenaria: #b48b64;
+    --cor-botao: #0f4c81;
+    --cor-fundo-pagina: #f9f9f8;
+    --cor-fundo-cartao: #ffffff;
+    --cor-primaria-texto: #0f2e4e;
+    --cor-bordas: #d1d1cd;
 }
-
-
 
 [data-theme="dark"] {
-    --cor-primaria: #5dade2;          /* azul suave para elementos */
-    --cor-secundaria: #85c1e9;        /* azul pastel */
-    --cor-terciaria: #1c2833;         /* fundo escuro azulado */
-    --cor-quartenaria: #ffffff;       /* branco para texto */
-    --cor-botao: #5dade2;             /* botão com destaque claro */
-    --cor-fundo-pagina: #121a23;      /* fundo principal escuro */
-    --cor-fundo-cartao: #1a2c3a;      /* fundo de cartões */
-    --cor-primaria-texto: #d6eaf8;    /* texto azul claro */
-    --cor-bordas: #3b5870;            /* borda azul acinzentada */
+    --cor-primaria: #1a3a5c;
+    --cor-secundaria: #aaa9a6;
+    --cor-terciaria: #0f1a24;
+    --cor-quartenaria: #ffe2b8;
+    --cor-botao: #245a8c;
+    --cor-fundo-pagina: #0a1015;
+    --cor-fundo-cartao: #1e2d3a;
+    --cor-primaria-texto: #a9c7e1;
+    --cor-bordas: #445566;
 }
-
 
 [data-theme="high-contrast"] {
-    --cor-primaria: #000000;         
-    --cor-secundaria: #ffff00;       
-    --cor-terciaria: #ffffff;       
-    --cor-quartenaria: #ffffff;     
-    --cor-botao: #ffffff;            
-    --cor-fundo-pagina: #000000;    
-    --cor-fundo-cartao: #ffffff;   
-    --cor-primaria-texto: #ffffff;  
-    --cor-bordas: #000000;  
+    --cor-primaria: #ffffff;
+    --cor-secundaria: #00ffff;
+    --cor-terciaria: #1a1a1a;
+    --cor-quartenaria: #ffffff;
+    --cor-botao: #00ffff;
+    --cor-fundo-pagina: #000000;
+    --cor-fundo-cartao: #1a1a1a;
+    --cor-primaria-texto: #ffffff;
+    --cor-bordas: #00ffff;
 }
 
-
-
-/* CSS externo */
-
-body { /*estilo global da página*/
+body {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--cor-fundo-pagina);
     line-height: 1.6;
@@ -52,103 +45,118 @@ body { /*estilo global da página*/
 h1, h2 {
     text-align: center;
     color: var(--cor-primaria);
-    margin-bottom: 1rem; /*distancia entre o titulo e o conteudo abaixo */
-    font-size: 2rem; /* tamanho fonte */
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
-header { /*cabeçalho, pagina de navegação*/
+header {
     background-color: var(--cor-primaria);
     padding: 1rem 2rem;
-    position: sticky; /* cabeçalho fixo quando rola para baixo*/
-    top: 0; /* define que ficará colado a 0 pixels do topo*/
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
-header ul { /*lista dentro do cabeçalho*/
-    display: flex;  /* organiza na horizontal em vez de um em cima do outro*/
-    justify-content: center; /*centraliza os itens*/
-    flex-wrap: wrap; /*permite que os itens se movam pra linha de baixo*/
+header ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-header a { /* mexe na escrita do cabeçalho*/
-    color: var(--cor-fundo-cartao); 
+header a {
+    color: var(--cor-fundo-cartao);
     font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     transition: background-color 0.3s;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-header a:hover { /* quando passa o mouse por cima dos itens*/
+header a:hover {
     background-color: var(--cor-secundaria)
 }
 
-
-section { /* espaços atras do itens */
+section {
     max-width: 1200px;
-    margin: 2rem auto; /* 2rem em cima e embaixo */
+    margin: 2rem auto;
     background-color: var(--cor-terciaria);
     padding: 2rem;
     border-radius: 12px;
 }
 
-p { /*espaçamento parágrafo*/
+p {
     margin-bottom: 1rem;
 }
 
 #sobreMim {
-    display: block;
-    padding: 4rem 10rem;
+    padding: 2rem 17rem;
 }
 
-#sobreMim img {
-   float: left;
-   margin: 0 2rem 1rem 0;
-   width: 20vw;
-   border-radius: 50%;
-   border: 5px solid var(--cor-bordas);
-   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+#sobreMim h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--cor-primaria);
 }
 
-#sobreMim p {
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.foto-perfil {
+    width: 20vw;
+    border-radius: 50%;
+    border: 5px solid var(--cor-bordas);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sobre-texto p {
     text-align: justify;
     margin-bottom: 1rem;
-    line-height: 1.6rem;
-    color: var(--cor-botao)
+    line-height: 1.7rem;
+    color: var(--cor-primaria-texto);
 }
+
 .minhas-redes {
-    clear: both;
+    list-style: none;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 1.1rem
+    gap: 1rem;
 }
 
 
-ul { /*listas*/
+ul {
     text-align: left;
     margin: 1rem auto;
-    padding-left: 2rem; /* Adiciona espaço à esquerda para os itens da lista */
+    padding-left: 2rem;
     clear:both;
 }
 
 footer {
     background-color: var(--cor-secundaria);
-    color: var(--cor-fundo); /*texto*/
+    color: var(--cor-primaria-texto);
     text-align: center;
     padding: 2rem 1rem;
-    margin-top: 4rem; /* espaço superior entre o conteúdo e o rodapé */
+    margin-top: 4rem;
     font-size: 1rem;
 }
 
-footer ul { /*contatos instagram e youtube*/
+footer ul {
     text-align: center;
 }
 
-form { /*entre em contato*/
+form {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /*espaços entre os elementos do furmulário*/
+    gap: 1rem;
     max-width: 1200px;
 }
 
@@ -156,15 +164,15 @@ input[type="text"],
 input[type="email"],
 input,
 textarea {
-    padding: 0.8rem; /* aumentar a área clicável*/
-    margin-bottom: 1rem; /*espaço entre cada campo*/
+    padding: 0.8rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--cor-bordas);
     border-radius: 6px;
     font-size: 1rem;
-    resize: none;  /*tira a opção de redimencionar a area de escrita*/
+    resize: none;
 }
 
-input[type="submit"] { /*botao de enviar*/
+input[type="submit"] {
     background-color: var(--cor-primaria);
     color: var(--cor-fundo);
     padding: 0.25rem 0.75rem;
@@ -173,13 +181,14 @@ input[type="submit"] { /*botao de enviar*/
     cursor: pointer;
     font-weight: bold;
 }
+
 .introducao {
     text-align: center;
 }
 
 .cards-em-coluna {
     flex-direction: column;
-    gap: 1rem; /*distância entre os card*/
+    gap: 1rem;
 }
 
 .cards-em-linha {
@@ -187,12 +196,11 @@ input[type="submit"] { /*botao de enviar*/
     flex-wrap: wrap;
 }
 
-
 .card {
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    list-style: none; /* nao ficar com bolinhas de lista*/
+    list-style: none;
     background-color: var(--cor-fundo-cartao);
 }
 
@@ -200,7 +208,7 @@ input[type="submit"] { /*botao de enviar*/
     margin-bottom: 0.5rem;
 }
 
-.titulo-card { /*definição dos títulos */
+.titulo-card {
     font-weight: bold;
     color: var(--cor-primaria);
     font-size: 1.3rem;
@@ -218,7 +226,7 @@ input[type="submit"] { /*botao de enviar*/
 
 .ano-card {
     font-size: 0.9rem;
-    color: var(--cor-botao)
+    color: var(--cor-primaria-texto);
 }
 
 .nome-hskill {
@@ -229,9 +237,8 @@ input[type="submit"] { /*botao de enviar*/
 
 .descricao-hskill {
     font-size: 1;
-    color: var(--cor-botao);
+    color: var(--cor-primaria-texto);
 }
-
 
 .icone-hskill {
     text-align: center;
@@ -243,8 +250,6 @@ input[type="submit"] { /*botao de enviar*/
     font-size: 0.95rem;
     color: var(--cor-primaria-texto);
 }
-
-
 
 #meusProjetos .card {
     width: 30%;
@@ -292,19 +297,18 @@ botao:hover {
 
 .artigos h3 {
     margin-top: 0;
-    color: var(cor --cor-secundaria);
+    color: var(--cor-secundaria);
     margin-bottom: 1rem;
 }
+
 .projeto-box {
     padding: 15px 25px;
-    border: 2px solid var(--cor-bordas); /* Borda sólida*/
+    border: 2px solid var(--cor-bordas);
     border-radius: 10px;
     color: var(--cor-primaria);
     background-color: var(--cor-fundo);
     font-weight: bold;
 }
-
-
 
 html {
     scroll-padding-top: 80px;
